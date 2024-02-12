@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+	"github.com/lightningsdk/core"
+	"github.com/lightningsdk/example/autogen"
+	"os"
+)
+
+func main() {
+	core.BootstrapConfig("./config/lightning.yml", autogen.GetModules())
+	err := core.RunCommand()
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+}

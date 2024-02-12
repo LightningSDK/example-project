@@ -1,0 +1,271 @@
+
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+<!-- comment -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <title>Legalize Pineapple Pizza</title>
+    <meta property="og:title" content="Legalize Pineapple Pizza" />
+    <meta name="twitter:title" content="Legalize Pineapple Pizza" />
+    <meta name="robots" content="ALL, INDEX, FOLLOW" />
+    <meta name="copyright" content="http://LightningSDK.net Copyright (c) 2016" />
+    <meta name="og:url" content="https://legalizepineapplepizza.org/" />
+    <meta name="keywords" content="pineapple pizza libertarian taxation is theft dan behrman president ancap" />
+    <meta property="og:image" content="https://legalizepineapplepizza.org/images/legalize-pineapple-pizza/og-preview.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://legalizepineapplepizza.org/images/legalize-pineapple-pizza/og-preview.jpg" />
+    <script>lightning_startup_q = []; lightning={"vars":{"google_analytics_id":"UA-73852775-5","facebook_pixel_id":"1501129736851947","google_adwords":[],"menu_context":""}};</script><script src="/js/lightning.min.js?v=672" async defer></script><script>;function lightning_startup(callback) { if (typeof $ == "undefined") { if (typeof callback != "undefined") lightning_startup_q.push(callback); setTimeout(lightning_startup, 500); } else {for (var i in lightning_startup_q) { $(lightning_startup_q[i]); } lightning_startup_q = []; if (typeof callback != "undefined") $(callback);} }; var lightning_mv = 672;lightning_startup(function() {lightning.startup.init();lightning.require(["\/js\/site.min.js"], function(){});lightning.video.initYouTube();})</script><link rel="stylesheet" type="text/css" href="/css/site.css?v=672"  /><link rel="stylesheet" type="text/css" href="/css/managed/legalizepineapplepizza.css?v=672" id="managed_css"  /><style>
+
+</style></head>
+<body class="antialiased hide-extras">
+<div class="marketing off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+
+        <div class="row">
+        </div>
+        <section role="main" class="scroll-container">
+            <div id='content'>
+                <div id='inner-content' class="content_panel padding">
+
+                    <div class="home">
+                        <div class="header cover" style=
+                                "background-image:url(/images/legalize-pineapple-pizza/tide-background.jpg)">
+                            <div class="row">
+                                <div class="column text-center"><img src="/images/legalize-pineapple-pizza/legalize-header.png"></div>
+                            </div>
+                        </div>
+                        <div class="donate-wrapper">
+                            <div class="row">
+                                <div class="column"><div class="row header-container" data-equalizer>
+                                    <div class="small-12 medium-6 column">
+                                        <div class="wrapper" data-equalizer-watch>
+                                            <h1>Join the Campaign!</h1>
+                                            <form action="/contact" method="post" data-abide>
+                                                <input name="token" id="token" value="fYg7mHa70dGWo3hexnpeRA3G9MC+ritfSBBW2hWwbKwkBpAqe7x3glHtM2gxktiaB9RrByHTbuJyCGxVCGPyuQ==" type="hidden" autocomplete="off"  />                <input type="hidden" name="optin" value="true">
+                                                <input type="hidden" name="contact" value="true">
+                                                <input type="hidden" name="redirect" value="/volunteer">
+                                                <input type="hidden" name="success" value="Thank you for joining the campaign!">
+                                                <div>
+                                                    <input type="text" name="name" placeholder="Your Name" required>
+                                                    <small class="error">Please enter your name.</small>
+                                                </div>
+                                                <div>
+                                                    <input type="email" name="email" placeholder="Best Email Address" required>
+                                                    <small class="error">Please enter a valid email address.</small>
+                                                </div>
+                                                <div>
+                                                    <input type="text" name="phone" placeholder="Phone Number">
+                                                    <small class="error">Please enter a valid phone number.</small>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="volunteer" value="YES">
+                                                    <span class="white">I am interested in volunteering.</span>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="submit" name="submit" class="button red medium">Next <i class="fa fa-arrow-right"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="hide-for-medium-up small-12 column">
+                                        <br>
+                                    </div>
+                                    <div class="small-12 medium-6 column">
+                                        <div class="wrapper" data-equalizer-watch>
+                                            <script src="https://checkout.stripe.com/checkout.js"></script>
+                                            <script>
+                                                lightning_startup(function(){
+                                                    var donate_link = 'stripe';
+                                                    $('.donation-amount').on('click', 'span', function(){
+                                                        $('.donation-amount').find('span').removeClass('selected');
+                                                        $(this).addClass('selected');
+                                                    });
+
+
+                                                    var amount;
+                                                    stripe_meta = {};
+                                                    var handler = StripeCheckout.configure({
+                                                        key: 'pk_live_kXn2fYzICbLfppTr0BqnRYU7',
+                                                        locale: 'auto',
+                                                        zipCode: true,
+                                                        shippingAddress: false,
+                                                        billingAddress: true,
+                                                        bitcoin: true,
+                                                        token: function(token, addresses) {
+                                                            $.ajax({
+                                                                url: '/api/stripe/charge',
+                                                                type: 'POST',
+                                                                dataType: 'JSON',
+                                                                data: {
+                                                                    amount: amount,
+                                                                    token: token.id,
+                                                                    currency: 'usd',
+                                                                    payment_data: token,
+                                                                    addresses: addresses,
+                                                                    meta: stripe_meta
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+
+                                                    // Close Checkout on page navigation:
+                                                    $(window).on('popstate', function() {
+                                                        handler.close();
+                                                    });
+
+                                                    clickSubmitDonate = function(e) {
+                                                        if (donate_link === 'stripe') {
+                                                            amount = ($('.donation-amount .selected').data('value')) * 100;
+                                                            handler.open({
+                                                                name: 'Donate',
+                                                                description: 'Make a Donation',
+                                                                amount: amount,
+                                                                meta: stripe_meta
+                                                            });
+                                                            e.preventDefault();
+                                                        } else {
+                                                            document.location.href = donate_link.replace(/&amp;/g, '&') + $('.donation-amount .selected').data('value');
+                                                        }
+                                                    }
+                                                });
+                                            </script>
+                                            <h1>
+                                                Then donate!
+                                            </h1>
+                                            <div class="donation-amount text-center">
+                                                <span data-value="5">$5</span>
+                                                <span class="selected" data-value="25">$25</span>
+                                                <span data-value="50">$50</span>
+                                                <span data-value="100">$100</span>
+                                                <span data-value="500">$500</span>
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <button onclick="clickSubmitDonate(event)" class="button red medium">Next <i class="fa fa-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="row">
+                                <div class="column">
+                                    <p style="text-align: center;"></p>
+                                    <p style="text-align: center;"><div class="flex-video widescreen"><div class="youtube" id="c2HsH9Nh60U" ></div></div></p>
+                                    <p style="text-align: center;"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="principles bg-tan">
+                            <div class="row">
+                                <div class="column">
+                                    <h2 style="text-align: center;">LPP was founded on the following
+                                        principles:</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Pineapple Pizza is a human right</h3>
+                                        </li>
+                                        <li>
+                                            <h3>Nobody should tell you what to put in your body</h3>
+                                        </li>
+                                        <li>
+                                            <h3>Nobody has the right to control your state of mind</h3>
+                                        </li>
+                                        <li>
+                                            <h3>Pineapple is just plant, and nobody has ever overdosed on
+                                                pineapple</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pizza cover" style="background-image:url(/images/legalize-pineapple-pizza/pizza-stretch.jpg)">
+                            <div class="row">
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                        <div class="behrman bg-white">
+                            <div class="row">
+                                <div class="column small-12 medium-6 text-center">
+                                    <h2>There is a way to<br>
+                                        protect your rights</h2>
+                                    <p>Dan "Taxation Is Theft" Behrman<br>
+                                        Is fighting to secure your right<br>
+                                        to put pineapple on your pizza.</p>
+                                    <p><a href="https://behrman2020.com">Learn More</a></p>
+                                </div>
+                                <div class="column small-12 medium-6"><img src="/images/legalize-pineapple-pizza/lp-behrman2020-logos.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="defend cover" style="background-image:url(/images/legalize-pineapple-pizza/sand-background.jpg)">
+                            <div class="row">
+                                <div class="column"><img src="/images/legalize-pineapple-pizza/disapprove-quote.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white">
+                        <div class="row">
+                            <div class="column" style=
+                                    "padding-top:20px; padding-bottom: 20px;">
+                                <h3 style="text-align: center;">We can not let this issue divide
+                                    us. United we stand.</h3>
+                                <p>The Department of Homeland Security openly admits that the
+                                    Russians may be using subversive propaganda to divide this great
+                                    nation.</p>
+                                <p><img alt="" src="/images/behrman-2020/site/cisa-pineapple-pizza.jpg" style="width: 100%;"></p>
+                                <div class="text-center"><a href="https://www.dhs.gov/sites/default/files/publications/19_0717_cisa_the-war-on-pineapple-understanding-foreign-interference-in-5-steps.pdf">
+                                    Original Document</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white" style="background-color:#ccc;">
+                        <div class="row">
+                            <div class="column small-12 medium-6" style=
+                                    "padding-top:20px; padding-bottom: 20px;">
+                                <h2>Gordon Ramsey Slander Campaign</h2>
+                                <p>Hack Chef Gordon Ramsey has launched a full-frontal attack on
+                                    pineapple pizza, insulting Hawaiians and Canadians along the way.
+                                    This propaganda campaign comes from an inexperienced chef, well
+                                    funded by corporate media for his high-rating insults. In this
+                                    video, he assaults your freedom to choose. But if you looked
+                                    closely, he sample's this pizza with a fork and knife. Never trust
+                                    a man's opinion on pizza if he eats it with a fork. His opinion is
+                                    baseless and irrelevant in our global society.</p>
+                            </div>
+                            <div class="column small-12 medium-6"><div class="flex-video widescreen"><div class="youtube" id="D-5IHCJJSPQ" ></div></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div><div class="row">
+            <div class="column small-12 medium-4">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="https://behrman2020.com">Behrman 2020</a></li>
+                    <li><a href=
+                                   "https://www.facebook.com/LegalizePineapplePizza/">FaceBook
+                        Page</a></li>
+                    <li><a href=
+                                   "https://taxationistheft.cards/store/behrman-2020">Merchandise
+                        Swag</a></li>
+                </ul>
+            </div>
+            <div class="column small-12 medium-4">&nbsp;</div>
+            <div class="column small-12 medium-4">&nbsp;</div>
+            <div class="column">
+                <p style="text-align: center;">Website by <a href=
+                                                                     "https://libertymarketing.me">Liberty Marketing</a></p>
+            </div>
+        </div>
+        </div>            </div>
+</div>
+<script>;</script><style></style></body>
+</html>

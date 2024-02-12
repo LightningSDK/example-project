@@ -1,0 +1,14 @@
+name: "page name"
+contents:
+  type: sections
+  contents:
+    - type: html
+      name: header
+      contents: ... # some link to a predefined header widget
+    - type: bs-columns
+      name: hero
+      columns: # content type is a list of widgets
+        - type: html
+          contents: <h2>this is html</h2>
+        - type: html
+          contents: /path/to/imaage.jpg
