@@ -8,8 +8,13 @@ import (
 )
 
 func main() {
-	core.BootstrapConfig("./config/lightning.yml", autogen.GetModules())
-	err := core.RunCommand()
+	app, err := core.BootstrapConfig("./config/lightning.yml", autogen.GetModules)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	err = core.RunCommand(app)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)

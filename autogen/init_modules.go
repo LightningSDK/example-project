@@ -1,12 +1,10 @@
 package autogen
 
 import (
-	"github.com/lightningsdk/core"
-	"github.com/lightningsdk/ui"
-)
-import (
 	"github.com/lightningsdk/blog"
+	"github.com/lightningsdk/core"
 	"github.com/lightningsdk/db"
+	"github.com/lightningsdk/ui"
 )
 
 func GetModules(app *core.App) map[string]core.Module {
