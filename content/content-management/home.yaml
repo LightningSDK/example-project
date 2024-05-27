@@ -11,4 +11,4 @@ contents:
         - type: html
           contents: <h2>this is html</h2>
         - type: html
-          contents: /path/to/imaage.jpg
+          contents: /path/to/image.jpg

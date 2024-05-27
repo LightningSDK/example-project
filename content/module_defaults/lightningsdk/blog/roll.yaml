@@ -1,0 +1,12 @@
+name: "blog post"
+contents:
+  - type: template
+    name: default_header
+  - type: html
+    contents:
+      - type: html
+        contents: <h1>Recent Posts</h1>
+      - type: html
+        contents: {{ blog-body count="5" }}
+  - type: template
+    name: default_footer

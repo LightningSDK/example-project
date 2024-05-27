@@ -1,0 +1,10 @@
+name: "blog post"
+contents:
+  - type: template
+    name: template
+  - type: html
+    contents:
+      - type: html
+        contents: <h1>{{ title }}</h1>
+      - type: html
+        contents: {{ blog-body count="5" }}

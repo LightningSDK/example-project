@@ -12,3 +12,4 @@ modules:
     schema: postgres
     port: 5432
     sslmode: false
+  github.com/lightningsdk/ui: null
