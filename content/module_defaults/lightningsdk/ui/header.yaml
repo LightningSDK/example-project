@@ -1,4 +1,4 @@
 name: "Default Header"
 contents:
   - type: html
-    content: "<div><h1>Header</h1></div>"
+    contents: "<div><h1>Header</h1></div>"
