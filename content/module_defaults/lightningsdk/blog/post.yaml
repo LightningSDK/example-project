@@ -1,7 +1,6 @@
 name: "blog post"
+template: lightningsdk/ui/template.yaml
 contents:
-  - type: template
-    name: template
   - type: html
     contents:
       - type: html
