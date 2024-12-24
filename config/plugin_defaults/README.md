@@ -1,0 +1,1 @@
+This directory should only be used for reference. Assume it will be overwritten every time a plugin is updated

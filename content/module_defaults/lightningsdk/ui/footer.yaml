@@ -1,4 +1,0 @@
-name: "Default Footer"
-contents:
-  - type: html
-    contents: "<div><small>footer</small></div>"

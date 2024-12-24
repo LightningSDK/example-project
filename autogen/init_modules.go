@@ -1,16 +1,15 @@
 package autogen
 
 import (
-	"github.com/lightningsdk/blog"
-	"github.com/lightningsdk/core"
-	"github.com/lightningsdk/db"
-	"github.com/lightningsdk/ui"
+	"github.com/lightningsdk/core/model"
+	"github.com/lightningsdk/example/local"
 )
 
-func GetModules(app *core.App) map[string]core.Module {
-	modules := map[string]core.Module{}
-	modules["github.com/lightningsdk/ui"] = ui.NewModule(app)
-	modules["github.com/lightningsdk/blog"] = blog.NewModule(app)
-	modules["github.com/lightningsdk/db"] = db.NewModule(app)
-	return modules
+func GetPlugins() map[string]model.Plugin {
+	plugins := map[string]model.Plugin{}
+	plugins["local"] = local.NewPlugin()
+	//plugins["github.com/lightningsdk/ui"] = ui.NewPlugin(app)
+	//plugins["github.com/lightningsdk/blog"] = blog.NewPlugin(app)
+	//plugins["github.com/lightningsdk/db"] = db.NewPlugin(app)
+	return plugins
 }

@@ -1,8 +1,0 @@
-name: "blog links recent"
-contents:
-  - type: div
-    contents:
-      - type: html
-        contents: <h2>Recent Posts</h2>
-      - type: html
-        contents: {{ blog-recent-list count="5" }}

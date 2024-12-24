@@ -1,4 +1,0 @@
-name: "Default Header"
-contents:
-  - type: html
-    contents: "<div><h1>Header</h1></div>"
