@@ -2,15 +2,18 @@
 include:
   - plugins.yml
 plugins:
-#  github.com/lightningsdk/blog:
-#    urlprefix: blog
-#  github.com/lightningsdk/db:
-#    host: localhost
-#    user: postgres
-#    password: postgres
-#    database: postgres
-#    schema: postgres
-#    port: 5432
-#    sslmode: false
+  github.com/lightningsdk/blog:
+    urlprefix: blog
+  github.com/lightningsdk/db:
+    host: localhost
+    user: postgres
+    password: postgres
+    database: postgres
+    schema: postgres
+    port: 5432
+    sslmode: false
   github.com/lightningsdk/ui: null
+  github.com/lightningsdk/core:
+    http:
+      port: 8080
   local: null

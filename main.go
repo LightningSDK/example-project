@@ -6,9 +6,5 @@ import (
 )
 
 func main() {
-	app := core.NewApp()
-	// this loads any included plugins
-	app.RegisterPlugins(autogen.GetPlugins())
-	app.Bootstrap()
-	app.Run()
+	core.Run("./config/lightning.yml", autogen.GetPlugins())
 }
